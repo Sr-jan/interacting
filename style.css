@@ -1,11 +1,133 @@
 * {
 	box-sizing: content-box;
 }
+
+html { 
+	background-image: linear-gradient(#9a0286, #037e9b);
+
+}
+
 body {
+	color: black;
+	background-image: url(images/mmtermina.png);
+	background-repeat: no-repeat;
+	background-position: 50% -300%;
+	font-family: helvetica, arial, sans-serif;
 	margin: 0;
 	padding: 0;
+	text-align: center;
+	font-size: 24px;
+	height: 100vh;
+
 }
 img {
 	max-width: 100%;
 	height: auto;
 }
+main {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+	background-image: linear-gradient(#000000, #20041d, #420202);
+}
+.toggle body {
+	color: black;
+	background-image: url(images/mmterminadrk.png);
+}
+button {
+	width: 20em;
+	height: 20em;
+	border-radius: 75%;
+	overflow: hidden;
+    background-image: url(images/mmmoon.png);
+    background-size: 100%;
+    background-position: center;
+    transform: scale(0.325);
+    transition: transform 60s, box-shadow 4.5s;
+    z-index: -1 !important;
+}
+#zoom .mmmoon {
+	transform: scale(1.75);
+}
+
+.trigger {
+	position: fixed;
+	bottom: 3em;
+	right: 3em;
+	width: 3em;
+	height: 3em;
+	padding: 0;
+	background-image: url(images/tforce.png);
+	background-size: 100%;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	color: black;
+	line-height: 2;
+	
+    text-align: fixed;
+    vertical-align: middle;
+    transition: all 3s ease;
+
+
+    
+}
+
+.zoom {
+	transition: 2.25s ease;
+}
+
+
+
+
+#zoom .trigger {
+	transform: rotate(180deg);
+	transform-origin: center;
+	background-image: url(images/btforce.png);
+}
+
+.eclipse {
+	box-shadow: 10em 0 10em rgba(0,0,0,0.75) inset;
+	/*transition: box-shadow 5s*/;
+}
+
+
+/*
+background-image: linear-gradient(#420202, #20041d)
+
+.trigger {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	width: 1.5em;
+	height: 1.5em;
+	cursor: pointer;
+	padding: 0;
+	background-color: white;
+	color: black;
+	line-height: 1.4;
+	border-radius: 50%;
+    font-size: 1.25em;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.25s ease;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0);
+
+
+    body {
+	color: black;
+	background-image: linear-gradient(#000000, #351b32);
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 24px;
+	height: 100vh;
+}
+}*/
+
+
+
